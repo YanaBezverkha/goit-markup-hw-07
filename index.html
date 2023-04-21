@@ -56,7 +56,15 @@
             </li>
           </ul>
         </address>
+
+        <button class="js-open-menu open-menu open-menu-button" type="button">
+          <svg class="icon-menu" width="32" height="32">
+            <use href="./images/icon.svg#menu"></use>
+          </svg>
+        </button>
       </div>
+
+
     </header>
 
     <!-- Main -->
@@ -82,7 +90,7 @@
                   <use href="./images/icon.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="subtitle">Strategy</h3>
+              <h3 class="subtitle subtitle-features  ">Strategy</h3>
               <p class="text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
@@ -94,7 +102,7 @@
                   <use href="./images/icon.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="subtitle">Punctuality</h3>
+              <h3 class="subtitle subtitle-features">Punctuality</h3>
               <p class="text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
@@ -106,7 +114,7 @@
                   <use href="./images/icon.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="subtitle">Diligence</h3>
+              <h3 class="subtitle subtitle-features">Diligence</h3>
               <p class="text">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
@@ -118,7 +126,7 @@
                   <use href="./images/icon.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="subtitle">Technologies</h3>
+              <h3 class="subtitle subtitle-features">Technologies</h3>
               <p class="text">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
@@ -508,7 +516,7 @@
     <!-- Footer -->
     <footer class="page-footer">
       <div class="container footer-container">
-        <div>
+        <div class="footer-container-logo">
           <a class="logo-footer" href="./index.html"
             >Web<span class="logo-footer-studio">Studio</span>
           </a>
@@ -518,7 +526,7 @@
           </p>
         </div>
 
-        <div>
+        <div class="footer-container-media">
           <p class="footer-subheader">Social media</p>
           <ul class="footer-icon-list">
             <li class="footer-icon-item">
@@ -552,7 +560,7 @@
           </ul>
         </div>
 
-        <div>
+        <div class="footer-container-form">
           <p class="footer-subheader">Subscribe</p>
           <form class="wrap-form">
             <input
@@ -571,7 +579,7 @@
       </div>
     </footer>
 
-    <!-- Modal -->
+    <!-- Modal Backdrop-->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-button" type="button" data-modal-close>
@@ -637,7 +645,71 @@
       </div>
     </div>
 
+    <!-- Mobile menu -->
+    <div class="mobile-menu js-menu-container">
+      <ul class="mobile-list">
+        <li class="mobile-item"><a href="./index.html" class="mobile-link active">Studio</a></li>
+        <li class="mobile-item">
+          <a href="./portfolio.html" class="mobile-link">Portfolio</a>
+        </li>
+        <li class="mobile-item"><a href="" class="mobile-link">Contacts</a></li>
+      </ul>
+      <address class="mobile-address">
+        <ul>
+          <a class="mobile-link-tel" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+          <a class="mobile-link-mail" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </ul>
+      </address>
+
+      <ul class="menu-icon-list">
+        <li class="menu-icon-item">
+          <a href="" class="menu-social-link">
+            <svg class="menu-icon" width="24" height="24">
+              <use href="./images/icon.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="menu-icon-item">
+          <a href="" class="menu-social-link">
+            <svg class="menu-icon" width="24" height="24">
+              <use href="./images/icon.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="menu-icon-item">
+          <a href="" class="menu-social-link">
+            <svg class="menu-icon" width="24" height="24">
+              <use href="./images/icon.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="menu-icon-item">
+          <a href="" class="menu-social-link">
+            <svg class="menu-icon" width="24" height="24">
+              <use href="./images/icon.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      
+      <button class="js-close-menu close-button" type="button">
+        <svg class="menu-close-icon" width="8" height="8">
+          <use href=".//images/icon.svg#icon-close-black"></use>
+        </svg>
+      </button>
+    </div>
     <!-- Js -->
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
+    <script src="./mobile-menu.js"></script>
     <script src="./modal.js"></script>
   </body>
 </html>
