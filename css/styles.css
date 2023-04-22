@@ -1222,6 +1222,7 @@ fill: var(--pressed-state);
 }
 
  .mobile-link-tel {
+  font-size: 26px;
   color: var(--active-color);
   margin-bottom: 40px;
   font-style: normal;
@@ -1235,6 +1236,12 @@ fill: var(--pressed-state);
   letter-spacing: 0.02em;
   color: var(--font-color);
   margin-bottom: 48px;
+}
+
+@media only screen and (min-width: 428px) {
+  .mobile-link-tel {
+    font-size: 36px;
+  }
 }
 
  .menu-icon-list {
