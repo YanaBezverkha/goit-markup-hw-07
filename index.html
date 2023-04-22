@@ -57,7 +57,8 @@
           </ul>
         </address>
 
-        <button class="js-open-menu open-menu open-menu-button" type="button">
+        <button class="js-open-menu open-menu open-menu-button" type="button" aria-expanded="false"
+        aria-controls="mobile-menu">
           <svg class="icon-menu" width="32" height="32">
             <use href="./images/icon.svg#menu"></use>
           </svg>
@@ -143,6 +144,7 @@
           <ul class="service-list">
             <li class="service-item">
               <img
+              srcset="./images/img-1@1x.jpg 1x, ./images/img-1@2x.jpg 2x"
                 src="./images/img-1.jpg"
                 alt="Computer with an open app"
                 width="360"
@@ -151,6 +153,7 @@
             </li>
             <li class="service-item">
               <img
+              srcset="./images/img-2@1x.jpg 1x, ./images/img-2@2x.jpg 2x"
                 src="./images/img-2.jpg"
                 alt="Phone with different tabs in the app"
                 width="360"
@@ -159,6 +162,7 @@
             </li>
             <li class="service-item">
               <img
+              srcset="./images/img-3@1x.jpg 1x, ./images/img-3@2x.jpg 2x"
                 src="./images/img-3.jpg"
                 alt="Phone in the hand on the background of laptop"
                 width="360"
@@ -176,6 +180,7 @@
           <ul class="team-list">
             <li class="team-item">
               <img
+              srcset="./images/mark-guerrero@1x.jpg 1x, ./images/mark-guerrero@2x.jpg 2x"
                 class="team-img"
                 src="./images/mark-guerrero.jpg"
                 alt="Smiling man with dark hair"
@@ -240,6 +245,7 @@
             </li>
             <li class="team-item">
               <img
+              srcset="./images/tom-ford@1x.jpg 1x, ./images/tom-ford@2x.jpg 2x"
                 class="team-img"
                 src="./images/tom-ford.jpg"
                 alt="Man with smile in a shirt"
@@ -303,6 +309,7 @@
             </li>
             <li class="team-item">
               <img
+              srcset="./images/camila-garcia@1x.jpg 1x, ./images/camila-garcia@2x.jpg 2x"
                 class="team-img"
                 src="./images/camila-garcia.jpg"
                 alt="Woman with the long black hair "
@@ -366,6 +373,7 @@
             </li>
             <li class="team-item">
               <img
+              srcset="./images/daniel-wilson@1x.jpg 1x, ./images/daniel-wilson@2x.jpg 2x"
                 class="team-img"
                 src="./images/daniel-wilson.jpg"
                 alt="Smiling man wearing in t-shirt"
@@ -646,7 +654,7 @@
     </div>
 
     <!-- Mobile menu -->
-    <div class="mobile-menu js-menu-container">
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
       <ul class="mobile-list">
         <li class="mobile-item"><a href="./index.html" class="mobile-link active">Studio</a></li>
         <li class="mobile-item">
