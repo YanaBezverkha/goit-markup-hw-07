@@ -739,28 +739,20 @@ fill: var(--pressed-state);
 
 @media screen and (min-width: 768px) {
   .customers-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     gap: 72px 24px;
   }
 }
 
 .customers-item {
-  min-width: 136px;
+  flex-basis: calc((100% - 24px)/2);
   height: 88px;
 }
 
-@media screen and (min-width: 428px) {
-  .customers-item {
-  width: 190px;
-}
-}
 
 @media screen and (min-width: 768px) {
   .customers-item {
-    width: 168px;
-    height: 88px;
+    flex-basis: 168px;
+  
   }
 }
 
